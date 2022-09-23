@@ -380,7 +380,6 @@ nav {
   fill: var(--color-text);
   top: 50%;
   left: 10px;
-
   transition: fill 400ms;
 }
 
