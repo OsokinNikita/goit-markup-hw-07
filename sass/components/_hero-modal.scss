@@ -184,18 +184,20 @@
   &:hover {
   border-color: $color-button-text;
 }
->.register-form__icon {
+
+&:focus ~ .register-form__icon,
+&:hover ~ .register-form__icon {
+  fill: $color-button-text;
+}
+}
+
+.register-form__icon {
   position: absolute;
   fill: $color-text;
   top: 50%;
   left: 10px;
 
   transition: fill 400ms;
-}
-&:focus ~ .register-form__icon,
-&:hover ~ .register-form__icon {
-  fill: $color-button-text;
-}
 }
 
 .register-form__title {

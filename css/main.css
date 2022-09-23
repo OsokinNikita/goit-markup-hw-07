@@ -380,16 +380,17 @@ nav {
 .register-form__input:focus, .register-form__input:hover {
   border-color: rgb(33, 150, 243);
 }
-.register-form__input > .register-form__icon {
+.register-form__input:focus ~ .register-form__icon, .register-form__input:hover ~ .register-form__icon {
+  fill: rgb(33, 150, 243);
+}
+
+.register-form__icon {
   position: absolute;
   fill: rgb(33, 33, 33);
   top: 50%;
   left: 10px;
   -webkit-transition: fill 400ms;
   transition: fill 400ms;
-}
-.register-form__input:focus ~ .register-form__icon, .register-form__input:hover ~ .register-form__icon {
-  fill: rgb(33, 150, 243);
 }
 
 .register-form__title {
