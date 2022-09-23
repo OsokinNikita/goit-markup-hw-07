@@ -215,6 +215,9 @@
   &::placeholder {
   font-size: 12px;
 }
+&:hover, &:focus {
+    border-color: $color-button-text;
+  }
 }
 
 .register-form__agreement {
